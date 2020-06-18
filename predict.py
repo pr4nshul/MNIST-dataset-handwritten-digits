@@ -40,7 +40,7 @@ acc = input()
 y = 'yes'
 if acc== y :
     print('This may take some time please wait...')
-    mtest = predict.TestLabel.shape[0]
+    mtest = TestLabel.shape[0]
     accuracy = 0
     for i in range(mtest):
         prediction = KNN(TrainPixels,TrainLabels,TestPixels[i,:])
